@@ -1,0 +1,91 @@
+import { Button, Paper, Typography, Box, Link } from "@mui/material";
+import experienceData from "../data/experience-data";
+
+export default function ProjectCard() {
+  const handleClick = () => {
+    console.log("ok");
+  };
+  return (
+    <>
+      <Typography
+        variant="h3"
+        fontFamily={"notable"}
+        sx={{
+          textAlign: "center",
+          p: 4,
+        }}
+      >
+        My Project
+      </Typography>
+      {experienceData.map((project) => (
+        <Paper
+          key={project.id}
+          elevation={3}
+          sx={{
+            marginBottom: 5,
+            padding: 8,
+            borderRadius: 8,
+            bgcolor: "#f2e8cc",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              gap: 4,
+              alignItems: "center",
+              flexDirection: { xs: "column", md: "row" },
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                gap: { xs: 2, md: 4 },
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 2,
+                }}
+              >
+                <Typography variant="h4" sx={{ fontFamily: "Notable" }}>
+                  {project.title}
+                </Typography>
+                <Typography variant="h6">
+                  {project.overviewDescription}
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: 3,
+                  alignItems: "center",
+                }}
+              >
+                <Button
+                  variant="contained"
+                  size="large"
+                  sx={{ mt: 2, maxWidth: 150 }}
+                  href={project.link}
+                  target="_Blank"
+                >
+                  Website Link
+                </Button>
+                <Link
+                  sx={{ mt: 2, maxWidth: 150 }}
+                  onClick={handleClick}
+                  href="/experiences"
+                >
+                  View more
+                </Link>
+              </Box>
+            </Box>
+            <img src={project.imageUrl} width="500"></img>
+          </Box>
+        </Paper>
+      ))}
+    </>
+  );
+}
