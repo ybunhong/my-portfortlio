@@ -1,1 +1,8 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Margarine&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+body {
+  font-family: "Margarine", cursive;
+  margin: 0;
+  padding: 0;
+  background: #d7f5dc;
+}
