@@ -1,4 +1,5 @@
-import { Box, Link } from "@mui/material";
+import { Box } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const headerContent = [
   {
@@ -30,9 +31,13 @@ export default function Header() {
           <Box sx={{ display: "flex", gap: 6 }}>
             {headerContent.map((items) => (
               <Link
-                variant="h5"
-                href={items.link}
-                sx={{ color: "black", fontFamily: "Notable" }}
+                to={items.link}
+                style={{
+                  color: "black",
+                  fontFamily: "Notable",
+                  textDecoration: "none",
+                  fontSize: "1.5rem",
+                }}
               >
                 {items.title}
               </Link>
