@@ -1,29 +1,45 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Link, Typography } from "@mui/material";
 
-const headerContent = ["Home", "About", "Contact"];
+const headerContent = [
+  {
+    title: "Home",
+    link: "/",
+  },
+  { title: "Experiences", link: "/experiences" },
+
+  { title: "Contact", link: "/contact" },
+];
 export default function Header() {
   return (
     <>
-      <Container sx={{ bgcolor: "cyan", height: "fit-content", p: 3 }}>
+      <Box
+        sx={{
+          bgcolor: "rgba(247, 247, 247, 0.7)",
+          height: "fit-content",
+          borderRadius: 8,
+          p: 3,
+        }}
+      >
         <Box
           sx={{
             display: "flex",
-            justifyContent: "space-between",
+            justifyContent: "center",
             width: "100%",
           }}
         >
-          <Box>
-            <img src="/vite.svg" width="35" height="35" />
-          </Box>
-          <Box sx={{ display: "flex", gap: 4 }}>
-            {headerContent.map((items: string) => (
-              <Typography variant="h5" key={items}>
-                {items}
-              </Typography>
+          <Box sx={{ display: "flex", gap: 6 }}>
+            {headerContent.map((items) => (
+              <Link
+                variant="h5"
+                href={items.link}
+                sx={{ color: "black", fontFamily: "Notable" }}
+              >
+                {items.title}
+              </Link>
             ))}
           </Box>
         </Box>
-      </Container>
+      </Box>
     </>
   );
 }
