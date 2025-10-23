@@ -1,15 +1,15 @@
-import { Box, Typography, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Router from "./routes/index";
 
 export default function App() {
   return (
     <>
-      <Header />
       <Container>
-        <Box>
-          <Typography variant="h3">I'm a Software Developer.|</Typography>
-          <Typography>Currently. I'm unemployed</Typography>
-        </Box>
+        <Header />
+        <Router />
+        <Footer />
       </Container>
     </>
   );

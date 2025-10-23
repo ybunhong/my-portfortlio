@@ -1,24 +1,18 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import "./index.css";
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: "#d8a06e",
-    },
-    secondary: {
-      main: "#4e2030ff",
-    },
-  },
-});
-
+import theme from "./shared-theme/theme.ts";
+import { Button } from "@mui/material";
+import { BrowserRouter } from "react-router-dom";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <BrowserRouter>
+      <Button variant="contained">default</Button>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </StrictMode>
 );
