@@ -65,3 +65,19 @@ npm run dev
 - The project is fully responsive and works on all screen sizes.
 
 ---
+
+## Deployment
+
+This project is configured for deployment on Render.
+
+### Build Command
+
+```
+npm install; npm run build
+```
+
+### Publish Directory
+
+```
+dist
+```

@@ -1,4 +1,4 @@
-import { Box, Container, Link, Typography } from "@mui/material";
+import { Box, Link } from "@mui/material";
 
 const headerContent = [
   {

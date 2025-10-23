@@ -8,7 +8,7 @@ const buttonTheme = {
           borderRadius: theme.shape.borderRadius,
           padding: theme.spacing(1, 2),
         }),
-        outlined: ({ theme }: { theme: Theme }) => ({
+        outlined: () => ({
           borderWidth: 2,
         }),
       },
