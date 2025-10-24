@@ -41,7 +41,7 @@ const experienceData = [
   {
     id: 3,
     title: "Porsche Clone Project",
-    imageUrl: "/Porsche/porsche.png",
+    imageUrl: "/porsche/porsche-store.png",
     overviewDescription:
       "A collaborative e-commerce website clone of Porsche Store built using Vanilla HTML, CSS, and JavaScript to simulate real-world teamwork and project workflow.",
     detailDescription:
