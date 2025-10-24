@@ -48,7 +48,7 @@ const experienceData = [
       "This project focused on replicating Porsche’s online store experience, from product display to responsive design. The team practiced Git and GitLab for collaboration, branching strategies, and issue tracking. The clone emphasized front-end architecture, layout precision, and interactivity through clean, maintainable code.",
     keyTechnologies: ["HTML", "CSS", "JavaScript", "Git", "GitLab"],
     projectStatus: "Developed",
-    link: "",
+    link: "https://porsche-store.onrender.com",
     projectContributions: "Team Project",
     contributions: [
       "Assisted the team lead in managing and reviewing assigned tasks to ensure project quality and timely delivery.",
