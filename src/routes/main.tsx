@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Home from "../pages/home";
 import Experiences from "../pages/experiences";
 import Contact from "../pages/contact";
+import AboutMe from "../pages/aboutMe";
 
 export const mainRoute = [
   {
@@ -25,6 +26,10 @@ export const mainRoute = [
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "aboutme",
+        element: <AboutMe />,
       },
       {
         path: "500",
