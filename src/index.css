@@ -4,5 +4,24 @@ body {
   font-family: "Margarine", cursive;
   margin: 0;
   padding: 0;
-  background: #d7f5dc;
+  background-color: #eaf6f6;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="1920" height="1080" fill="%23eaf6f6"/><g stroke="%23b0b5ba" stroke-width="1.5" opacity="0.7"><line x1="300" y1="180" x2="600" y2="250"/><line x1="600" y1="250" x2="950" y2="200"/><line x1="950" y1="200" x2="1300" y2="350"/><line x1="1300" y1="350" x2="1700" y2="200"/><line x1="300" y1="180" x2="950" y2="200"/><line x1="600" y1="250" x2="1300" y2="350"/><line x1="950" y1="200" x2="1700" y2="200"/><line x1="600" y1="250" x2="700" y2="700"/><line x1="950" y1="200" x2="700" y2="700"/><line x1="1300" y1="350" x2="1400" y2="700"/><line x1="1700" y1="200" x2="1400" y2="700"/><line x1="700" y1="700" x2="1000" y2="900"/><line x1="1400" y1="700" x2="1000" y2="900"/><line x1="1000" y1="900" x2="1600" y2="900"/><line x1="1400" y1="700" x2="1600" y2="900"/><line x1="1000" y1="900" x2="1700" y2="800"/><line x1="1600" y1="900" x2="1700" y2="800"/><line x1="950" y1="200" x2="1200" y2="600"/><line x1="1200" y1="600" x2="1600" y2="900"/><line x1="600" y1="250" x2="1200" y2="600"/></g><g fill="%23b0b5ba" opacity="0.8"><circle cx="300" cy="180" r="7"/><circle cx="600" cy="250" r="7"/><circle cx="950" cy="200" r="7"/><circle cx="1300" cy="350" r="7"/><circle cx="1700" cy="200" r="7"/><circle cx="700" cy="700" r="7"/><circle cx="1400" cy="700" r="7"/><circle cx="1000" cy="900" r="7"/><circle cx="1600" cy="900" r="7"/><circle cx="1700" cy="800" r="7"/><circle cx="1200" cy="600" r="7"/></g><g><polygon points="0,1080 400,900 900,1000 1400,900 1920,1080" fill="%239ad1a7"/><polygon points="0,1080 600,950 1200,1050 1920,1080" fill="%238cc69c" opacity="0.8"/></g></svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+
+a, .MuiLink-root {
+  transition: color 0.18s cubic-bezier(.4,0,.2,1), text-shadow 0.18s cubic-bezier(.4,0,.2,1);
+}
+
+.MuiPaper-root, .card, .project-card {
+  transition: box-shadow 0.18s cubic-bezier(.4,0,.2,1), transform 0.18s cubic-bezier(.4,0,.2,1);
+}
+.MuiPaper-root:hover, .card:hover, .project-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  transform: translateY(-2px) scale(1.01);
 }
