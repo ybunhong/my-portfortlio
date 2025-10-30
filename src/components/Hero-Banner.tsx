@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography, Link } from "@mui/material";
 
 export default function HeroBanner() {
   return (
@@ -16,7 +16,9 @@ export default function HeroBanner() {
             sx={{
               display: "flex",
               alignItems: "center",
-              gap: 4,
+              gap: { xs: 2, md: 4 },
+              flexDirection: { xs: "column", md: "row" },
+              textAlign: { xs: "center", md: "left" },
             }}
           >
             <img src="/banner.png" width="165px" height="220px" />
@@ -26,13 +28,14 @@ export default function HeroBanner() {
               <Typography variant="h6">
                 Reminds that tech evolves fast, writes smarter solutions
               </Typography>
+              <Link href="https://www.notion.so/Career-Tracking-1b3162d9a60d8083acbef679d93c9e6e?source=copy_link" target="_blank">Check out my Notion</Link>
             </Box>
           </Box>
           <Typography variant="h6">
             Passionate about building efficient, user-focused applications and
             writing code that is both functional and maintainable. Enjoys
-            collaborating with teams to turn ideas into well-crafted digital
-            experiences while constantly improving technical and design skills.
+            collaborating with teams to turn ideas into well-crafted experiences
+  
           </Typography>
         </Box>
       </Container>

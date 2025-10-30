@@ -1,5 +1,5 @@
-import { Box } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import "../header.css";
 
 const headerContent = [
   {
@@ -7,44 +7,32 @@ const headerContent = [
     link: "/",
   },
   { title: "Experiences", link: "/experiences" },
-
   { title: "Contact", link: "/contact" },
+  { title: "About Me", link: "/aboutme" },
 ];
+
 export default function Header() {
   return (
-    <>
-      <Box
-        sx={{
-          bgcolor: "rgba(247, 247, 247, 0.7)",
-          height: "fit-content",
-          borderRadius: 8,
-          p: 3,
-        }}
-      >
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            width: "100%",
-          }}
-        >
-          <Box sx={{ display: "flex", gap: 6 }}>
-            {headerContent.map((items) => (
-              <Link
-                to={items.link}
-                style={{
-                  color: "black",
-                  fontFamily: "Notable",
-                  textDecoration: "none",
-                  fontSize: "1.5rem",
-                }}
-              >
-                {items.title}
-              </Link>
-            ))}
-          </Box>
-        </Box>
-      </Box>
-    </>
+    <header className="header-bar">
+      <input type="checkbox" id="nav-toggle" className="nav-toggle" />
+      <label htmlFor="nav-toggle" className="nav-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav className="nav-menu">
+        {headerContent.map((items) => (
+          <RouterLink
+            key={items.title}
+            to={items.link}
+            className="nav-link"
+            style={{fontFamily:"notable", fontSize:"20px"}}
+          >
+            {items.title}
+          </RouterLink>
+        ))}
+      </nav>
+    </header>
   );
 }
+

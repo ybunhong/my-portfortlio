@@ -20,17 +20,23 @@ export default function Footer() {
               bgcolor: "#00CA72",
               justifyContent: "space-between",
               p: 3,
+              gap: 2,
               borderRadius: 8,
               boxShadow: 6,
+              flexDirection: {
+                xs:"column",
+                md:"row"
+              },
             }}
           >
             <Typography fontFamily={"notable"}>Contact me at</Typography>
             <Box
               sx={{
                 display: "flex",
-                flexDirection: "row",
                 justifyContent: "center",
                 gap: 4,
+                flexDirection: "row",
+                flexWrap: "wrap",
               }}
             >
               {contactData.map((contact) => (
@@ -43,7 +49,6 @@ export default function Footer() {
                     fontSize: "24px",
                     color: "white",
                     display: "flex",
-                    flexDirection: "column",
                     alignItems: "center",
                     gap: "12px",
                   }}

@@ -22,18 +22,21 @@ export default function ProjectCard() {
           key={project.id}
           elevation={3}
           sx={{
-            marginBottom: 5,
-            padding: 8,
-            borderRadius: 8,
+            marginBottom: 6,
+            padding: { xs: 3, md: 6 },
+            borderRadius: 14,
             bgcolor: "#f2e8cc",
+            boxShadow: 6,
           }}
         >
           <Box
             sx={{
               display: "flex",
-              gap: 4,
+              gap: { xs: 3, md: 8 },
               alignItems: "center",
               flexDirection: { xs: "column", md: "row" },
+              width: "100%",
+              justifyContent: "space-between",
             }}
           >
             <Box
