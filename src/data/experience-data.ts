@@ -18,6 +18,7 @@ const experienceData = [
       "Utilized Git for version control, managing feature branches, clear commits, and a structured README for setup and deployment.",
       "Created concise developer documentation covering project structure, accessibility decisions, and future enhancement plans.",
     ],
+    documentLink:"https://docs.google.com/document/d/1nAAzxNDtMdibAb2NM7uR7F2dmU9ptqnQK93AlEruNZ4/edit?usp=sharing"
   },
   {
     id: 2,
@@ -36,7 +37,7 @@ const experienceData = [
       "Built core UI components such as input panels, result displays, and modal dialogs to enhance user interaction by using Prompt Engineering Technique.",
       "Implement authentincation using Supabase",
       "Focused on improving Prompt modularity and reusable code structure across components.",
-    ],
+    ],documentLink:"https://docs.google.com/document/d/1794G7Q1cWwoNGxJr9q-PGxo62hCl6vARlEm47lo_YN4/edit?usp=sharing"
   },
   {
     id: 3,
@@ -61,6 +62,7 @@ const experienceData = [
 
       ,
     ],
+    documentLink:"https://docs.google.com/document/d/1RKvA8cC2OWyCVmTVndzy7xoDjlUOyXCQm6uFsKVA5i8/edit?usp=sharing"
   },
   {
     id: 4,
@@ -80,6 +82,7 @@ const experienceData = [
       "Implemented dynamic routing and smooth navigation using React Router for seamless page transitions.",
       "Structured the project with reusable components and clear folder organization to enhance maintainability.",
     ],
+    documentLink:""
   },
 ];
 
