@@ -1,10 +1,8 @@
-import { Button, Paper, Typography, Box, Link } from "@mui/material";
+import { Button, Paper, Typography, Box } from "@mui/material";
+import { Link } from "react-router-dom";
 import experienceData from "../data/experience-data";
 
 export default function ProjectCard() {
-  const handleClick = () => {
-    console.log("ok");
-  };
   return (
     <>
       <Typography
@@ -77,9 +75,11 @@ export default function ProjectCard() {
                   Website Link
                 </Button>
                 <Link
-                  sx={{ mt: 2, maxWidth: 150 }}
-                  onClick={handleClick}
-                  href="/experiences"
+                  to="/experiences"
+                  style={{
+                    color: "primary.main",
+                    marginTop: "16px",
+                  }}
                 >
                   View more
                 </Link>

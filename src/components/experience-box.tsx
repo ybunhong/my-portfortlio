@@ -1,4 +1,5 @@
-import { Box, Button, Paper, Typography,Link } from "@mui/material";
+import { Box, Button, Paper, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 import experienceData from "../data/experience-data";
 export default function ExperienceBox() {
   return (
@@ -66,7 +67,7 @@ export default function ExperienceBox() {
                   {items.keyTechnologies?.join(", ")}
                 </Typography>
               </Box>
-              <Typography>{items.detailDescription} {items.documentLink && <Link href={items.documentLink} target="_blank">Document</Link>} </Typography>
+              <Typography>{items.detailDescription} {items.documentLink && <Link to={items.documentLink} target="_blank">Document</Link>} </Typography>
               <Typography variant="subtitle2" color="rgb(0,0,0,0.75)">
                 {items.contributions?.map((point) => (
                   <Box
