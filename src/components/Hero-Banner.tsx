@@ -28,14 +28,18 @@ export default function HeroBanner() {
               <Typography variant="h6">
                 Reminds that tech evolves fast, writes smarter solutions
               </Typography>
-              <Link href="https://www.notion.so/Career-Tracking-1b3162d9a60d8083acbef679d93c9e6e?source=copy_link" target="_blank">Check out my Notion</Link>
+              <Link
+                href="https://www.notion.so/Career-Tracking-2bae41e9446380dabc8bd7d2cf0dbe98?source=copy_link"
+                target="_blank"
+              >
+                Check out my Notion
+              </Link>
             </Box>
           </Box>
           <Typography variant="h6">
             Passionate about building efficient, user-focused applications and
             writing code that is both functional and maintainable. Enjoys
             collaborating with teams to turn ideas into well-crafted experiences
-  
           </Typography>
         </Box>
       </Container>
