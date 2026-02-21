@@ -74,6 +74,30 @@ const techSkills = [
       "JavaScript runtime for building scalable backend applications.",
     imageUrl: "/tech/nodejs.png",
   },
+  {
+    id: 12,
+    tech: "Java",
+    description: "Object-oriented programming language for enterprise applications.",
+    imageUrl: "/tech/java.png",
+  },
+  {
+    id: 13,
+    tech: "Spring Ecosystem",
+    description: "Framework for building scalable backend applications.",
+    imageUrl: "/tech/spring-boot.png",
+  },
+  {
+    id: 14,
+    tech: "PostgreSQL",
+    description: "Relational database for reliable data storage and management.",
+    imageUrl: "/tech/postgresql.png",
+  },
+  {
+    id: 15,
+    tech: "MySQL",
+    description: "Relational database for reliable data storage and management.",
+    imageUrl: "/tech/mysql.png",
+  },
 ];
 
 export default techSkills;
