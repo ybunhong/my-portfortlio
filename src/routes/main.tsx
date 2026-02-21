@@ -4,8 +4,8 @@ import Home from "../pages/home";
 import Experiences from "../pages/experiences";
 import Contact from "../pages/contact";
 import AboutMe from "../pages/aboutMe";
-import Error500 from "../pages/Error500";
-import NotFound from "../pages/NotFound";
+import Error500 from "../pages/error/Error500";
+import NotFound from "../pages/error/NotFound";
 import Loading from "../components/Loading";
 
 export const mainRoute = [
