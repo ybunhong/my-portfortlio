@@ -29,7 +29,7 @@ export default function Footer() {
               },
             }}
           >
-            <Typography fontFamily={"notable"}>Contact me at</Typography>
+            <Typography fontFamily={"notable"} sx={{ display: { xs: "none", md: "inline" } }}>Contact me at</Typography>
             <Box
               sx={{
                 display: "flex",
@@ -51,6 +51,7 @@ export default function Footer() {
                     display: "flex",
                     alignItems: "center",
                     gap: "12px",
+                    
                   }}
                 >
                   <img src={contact.imageUrl} width="28" alt={contact.title} />
@@ -59,9 +60,22 @@ export default function Footer() {
             </Box>
           </Box>
 
+          <Box sx={{display:"flex", justifyContent:"space-between"}}>
           <Typography variant="subtitle2" color="#000000">
             © 2024 My Portfolio. All rights reserved.
           </Typography>
+          <Typography 
+            variant="caption" 
+            sx={{ 
+              color: "#666666", 
+              fontSize: "0.75rem",
+              opacity: 0.7,
+              fontStyle: "italic"
+            }}
+          >
+            Portfolio updated at February 2026
+          </Typography>
+          </Box>
         </Box>
       </footer>
     </>

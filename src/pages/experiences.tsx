@@ -14,19 +14,18 @@ export default function Experiences() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          textAlign: "center",
-          alignItems: "center",
           gap: 4,
           my: 8,
         }}
       >
-        <Typography variant="h6">
+        <Typography variant="h6" sx={{display:'flex', justifyContent:'center', textAlign: 'center'}}>
           Here, you can know me a little more and see my whole experience as a
           Developer.
         </Typography>
-        <Box sx={{display: 'flex', gap: 2}}>
+        <Box sx={{display: 'flex', gap: 2, justifyContent: 'center'}}>
           <Button
           variant="contained"
+          color="primary"
           href="https://drive.google.com/file/d/1ouUFUnpHsYuJ7z0sYyrK6SWSBs85gaKe/view?usp=sharing"
           target="_Blank"
         >
@@ -34,14 +33,15 @@ export default function Experiences() {
         </Button>
         <Button
           variant="contained"
+          color="secondary"
           onClick={hadnleDownload}
         >
           Download my Resume
         </Button>
         </Box>
         
+        <ExperienceBox />
       </Box>
-      <ExperienceBox />
     </>
   );
 }

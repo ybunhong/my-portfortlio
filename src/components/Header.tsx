@@ -26,7 +26,7 @@ export default function Header() {
             key={items.title}
             to={items.link}
             className="nav-link"
-            style={{fontFamily:"notable", fontSize:"20px"}}
+            style={{ fontFamily: "notable", fontSize: "20px", paddingLeft: "30px" }}
           >
             {items.title}
           </RouterLink>
