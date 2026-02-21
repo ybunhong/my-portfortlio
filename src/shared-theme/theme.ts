@@ -7,6 +7,9 @@ const theme = createTheme({
     primary: {
       main: "#20B15A",
     },
+    secondary: {
+      main: "#7C3AED",
+    },
   },
   ...buttonTheme,
   typography: {

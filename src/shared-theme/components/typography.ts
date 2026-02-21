@@ -1,6 +1,6 @@
 const typographyTheme = {
   typography: {
-    fontFamily: '"Margarine", cursive',
+    fontFamily: '"Oswald", cursive',
   },
 };
 export default typographyTheme;
