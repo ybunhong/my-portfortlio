@@ -1,7 +1,12 @@
 import { Typography, Box, Button } from "@mui/material";
 import ExperienceBox from "../components/experience-box";
+import {saveAs} from "file-saver";
 
 export default function Experiences() {
+
+  const hadnleDownload = () => {
+    saveAs("https://drive.google.com/file/d/1ouUFUnpHsYuJ7z0sYyrK6SWSBs85gaKe/view?usp=sharing", "Y Bunhong's Resume.pdf");
+  }
   return (
     <>
       <Box
@@ -21,10 +26,16 @@ export default function Experiences() {
         </Typography>
         <Button
           variant="contained"
-          href="https://www.canva.com/design/DAG1x5wFi3k/QFlYPpKKKLVMardGmmVh4w/edit?utm_content=DAG1x5wFi3k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+          href="https://drive.google.com/file/d/1ouUFUnpHsYuJ7z0sYyrK6SWSBs85gaKe/view?usp=sharing"
           target="_Blank"
         >
           View my Resume
+        </Button>
+        <Button
+          variant="contained"
+          onClick={hadnleDownload}
+        >
+          Download my Resume
         </Button>
       </Box>
       <ExperienceBox />
