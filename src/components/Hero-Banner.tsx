@@ -67,7 +67,7 @@ export default function HeroBanner() {
               </Link>
             </Box>
           </Box>
-          <Typography variant="h6">
+          <Typography variant="h6" display={{ xs: "none", md: "block" }}>
             Passionate about building efficient, user-focused applications and
             writing code that is both functional and maintainable. Enjoys
             collaborating with teams to turn ideas into well-crafted experiences

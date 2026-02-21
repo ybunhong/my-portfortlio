@@ -14,6 +14,7 @@ const headerContent = [
 export default function Header() {
   return (
     <header className="header-bar">
+   
       <input type="checkbox" id="nav-toggle" className="nav-toggle" />
       <label htmlFor="nav-toggle" className="nav-hamburger">
         <span></span>
