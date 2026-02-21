@@ -24,7 +24,8 @@ export default function Experiences() {
           Here, you can know me a little more and see my whole experience as a
           Developer.
         </Typography>
-        <Button
+        <Box sx={{display: 'flex', gap: 2}}>
+          <Button
           variant="contained"
           href="https://drive.google.com/file/d/1ouUFUnpHsYuJ7z0sYyrK6SWSBs85gaKe/view?usp=sharing"
           target="_Blank"
@@ -37,6 +38,8 @@ export default function Experiences() {
         >
           Download my Resume
         </Button>
+        </Box>
+        
       </Box>
       <ExperienceBox />
     </>
