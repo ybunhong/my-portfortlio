@@ -4,15 +4,19 @@ import Home from "../pages/home";
 import Experiences from "../pages/experiences";
 import Contact from "../pages/contact";
 import AboutMe from "../pages/aboutMe";
+import Error500 from "../pages/Error500";
+import NotFound from "../pages/NotFound";
+import Loading from "../components/Loading";
 
 export const mainRoute = [
   {
     element: (
       <>
-        <Suspense fallback={<div>Loading</div>}></Suspense>
+        <Suspense fallback={<Loading />}></Suspense>
         <Outlet />
       </>
     ),
+    errorElement: <Error500 />,
     children: [
       {
         path: "/",
@@ -32,12 +36,16 @@ export const mainRoute = [
         element: <AboutMe />,
       },
       {
+        path: "loading",
+        element: <Loading />,
+      },
+      {
         path: "500",
-        element: <div>500 Error Page</div>,
+        element: <Error500 />,
       },
       {
         path: "404",
-        element: <div>404 Not Found Page</div>,
+        element: <NotFound />,
       },
     ],
   },
