@@ -1,5 +1,26 @@
 const experienceData = [
   {
+    id:5,
+    title: "Axio",
+    imageUrl: "/Axio/axio.png",
+    overviewDescription:
+      "a full-stack project using modern technologies and stablity for task management problem. Maintain and Handle Users and their tasks.",
+    detailDescription:"",
+    keyTechnologies:["React","TypeScript","Material UI", "Java","Java Spring boot","PostgreSQL","Git","GitLab","Render", "Redis", "Figma"],
+    projectStatus: "On-going Developement pharse",
+    projectContributions: "Team Project",
+    link:"https://dev-axio.onrender.com",
+    contributions:[
+      "User-friendly for Task management platefrom",
+      "Handle Security for User and their tasks using authentication and authorization",
+      "Using Redis for caching and session management",
+      "Using PostgreSQL for database management",
+      "Hosting into the public to gain real user experience",
+      "Using Git for version control and GitHub for collaboration",
+    ],
+    documentLink:""
+  },
+  {
     id: 1,
     title: "Apple Clone Project",
     imageUrl: "/Apple/apple.png",

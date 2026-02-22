@@ -1,13 +1,66 @@
-import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import HomeIcon from "@mui/icons-material/Home";
 import BookmarkAddedIcon from '@mui/icons-material/BookmarkAdded';
+import WorkIcon from '@mui/icons-material/Work';
+import SchoolIcon from '@mui/icons-material/School';
 
 const aboutMeData = [
-    { year: "Present", icon: BookmarkAddedIcon, title: "Currently", color: "#d11178ff", desc: "I’m currently working on a full-stack project with my team using the PERN stack, while also participating in a hackathon focused on a machine learning project." },
-  { year: 2025, icon: LightbulbIcon, title: "Software Experience", color: "#7ac943", desc: "At Above and Beyond, I had the opportunity to work on several exciting projects, including the Apple Clone, BugSentinel, Porsche Clone, and my own Portfolio Website. Through these experiences, I learned what it truly means to work as a team — supporting one another, communicating openly, and solving problems together. It also gave me real-world exposure to Agile methodology, helping me grow both professionally and personally." },
-  { year: 2024, icon: LocationOnIcon, title: "Volunteer", color: "#f15a24", desc: "I volunteered as part of the Youth Ambassador Program and completed an internship in Sales and Marketing at Sprint Education Center. I have also participated in various volunteer roles across different fields — including media at AUPP, technical support at NUM, and booth coordination at ITC. This year has been a meaningful journey of improving my soft skills and communication abilities." },
-  { year: 2023, icon: HomeIcon, title: "Education", color: "#29abe2", desc: "Graduated from Phsar Derm Thkov High School || Baccalaureate 2023" },
+  { 
+    year: "2025-Present", 
+    icon: BookmarkAddedIcon, 
+    title: "System Developer Intern - Aeon Specialized Bank", 
+    color: "#d11178ff", 
+    category: "work",
+    desc: "• Maintain the code and fix the bug for core banking solution\n• Implemnt a feature to change code base from hard code to the dynamic to ensure the result is more accurate and reliable\n• Collaborate with team member to ensure the code is up to date and the system is running smoothly "
+  },
+  { 
+    year: "2025", 
+    icon: WorkIcon, 
+    title: "Software Developer Student - Above and Beyond", 
+    color: "#7ac943", 
+    category: "work",
+    desc: "• Developed 4 projects: Apple Clone, BugSentinel, Porsche Clone, Portfolio Website\n• Implemented Agile methodology reducing project delivery time\n• Led code reviews improving team code quality by 40%\n• Management task for team member using scrum and sprint methodology"
+  },
+  { 
+    year: "2023", 
+    icon: BookmarkAddedIcon, 
+    title: "Customer Service - Chip Mong", 
+    color: "#d11178ff", 
+    category: "work",
+    desc: "• Provide exceptional customer service to customers and ensure their satisfaction"
+  },
+  { 
+    year: 2025, 
+    icon: LocationOnIcon, 
+    title: "Dynamic Bandos Start up Completition - NICC", 
+    color: "#f15a24", 
+    category: "Volunteer and Competition",
+    desc: "• Presented an idea to the judges in the Architecture category \n• Improved the idea based on the feedback received\n• Connected and networked with young startup founders \n"
+  },
+  { 
+    year: 2024, 
+    icon: LocationOnIcon, 
+    title: "Various Volunteer", 
+    color: "#f15a24", 
+    category: "Volunteer and Competition",
+    desc: "• Volunteered at various events and competitions such as ITC, NICC, RUPP, NUM and various other volunteer activities\n• Used to do a media production, booth technician and coordinator, marketing and sales , logistics and transportation showcasing adaptability and collaboration skills \n  • Gain hands-on experience in with cerificates earned for each position"
+  },
+    { 
+    year: 2025, 
+    icon: SchoolIcon, 
+    title: "Asia Euro University", 
+    color: "#29abe2", 
+    category: "education",
+    desc: "• Pursing Bachelor of Computer Science (Y1)"
+  },
+  { 
+    year: 2025, 
+    icon: SchoolIcon, 
+    title: "Australian Centre of Education - ACE", 
+    color: "#29abe2", 
+    category: "education",
+    desc: "• Graduated with Distinction || IELTS 6.5\n"
+  },
+
 ];
 
 export default aboutMeData;
